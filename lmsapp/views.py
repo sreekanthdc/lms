@@ -9,3 +9,9 @@ def myIndex(request):
     template = loader.get_template('index.html')
     context = {}
     return HttpResponse(template.render(context, request))
+
+
+def admin_lgn(request):
+    template = loader.get_template('')
+    context = {}
+    return HttpResponse(template.render(context, request))
