@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'lsm.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'facebookdb',
+        'NAME': 'lmsDb',
 	    'USER': 'root',
 	    'PASSWORD': '1234',
     }
