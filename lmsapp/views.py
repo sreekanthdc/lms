@@ -29,10 +29,10 @@ def checkLogin(request):
                 template = loader.get_template('home.html')
 
             else:
-                template = loader.get_template('password_error.html')
+                return HttpResponse("Password didnt match")
 
         else:
-            template = loader.get_template('username_error.html')
+            return HttpResponse("User name didnt match")
 
     except Exception as e:
         print(e)
